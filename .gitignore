@@ -1,0 +1,9 @@
+$stmt->execute();
+
+// Fetch the result set
+$result = $stmt->get_result();
+
+// Iterate through the result set
+while ($row = $result->fetch_assoc()) {
+echo "ID: " . $row['id'] . ", Name: " . $row['name'] . "\n";
+}
